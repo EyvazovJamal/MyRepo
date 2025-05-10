@@ -1,0 +1,15 @@
+SELECT TOP (1000) [Id]
+      ,[RequestId]
+      ,[Url]
+      ,[RequestBody]
+      ,[RequestHeaders]
+      ,[MethodType]
+      ,[ResponseBody]
+      ,[ResponseHeaders]
+      ,[StatusCode]
+      ,[CreationDateTime]
+      ,[EndDateTime]
+      ,[ClientIp]
+  FROM [BookReviewDb].[dbo].[HttpLog]
+
+
