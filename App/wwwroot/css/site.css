@@ -1,0 +1,211 @@
+/* Стили для всего контента */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Стиль для заголовка страницы */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #5a6268;
+}
+
+/* Стилизация таблицы */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Стилизация ссылок и кнопок */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+
+/* Стили для формы подтверждения удаления */
+form {
+  display: inline-block;
+}
+
+a.create-link {
+  display: inline-block;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+a.create-link:hover {
+  background-color: #218838;
+}
+/* Стили для всего контента */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Стилизация формы */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 500px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #495057;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[type="date"] {
+  padding: 8px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для текста ошибки валидации */
+input:invalid, textarea:invalid {
+  border-color: #dc3545;
+}
+
+input:valid, textarea:valid {
+  border-color: #28a745;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+/* Стили для кнопок действий */
+.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Стили для кнопки Edit */
+.btn-warning {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  color: #fff;
+}
+
+/* Стили для кнопки Delete */
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  color: #fff;
+}
+
+/* Стили для кнопки Create */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Для кнопки Delete с малым размером */
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* Убираем отступы на маленьких кнопках */
+.d-inline {
+  display: inline-block;
+}
+

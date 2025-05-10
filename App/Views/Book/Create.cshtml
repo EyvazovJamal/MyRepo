@@ -1,0 +1,49 @@
+@model App.Models.Book
+
+@{
+    IEnumerable<ValidationErrorItem>? validationErrors=null;
+    var validationErrorsObject=base.ViewData["validation_errors"];
+
+    if (validationErrorsObject is IEnumerable<ValidationErrorItem> )
+    {
+        validationErrors = validationErrorsObject as IEnumerable<ValidationErrorItem>;
+    }
+}
+
+
+@if(validationErrors!=null)
+{
+    <ul>
+        @foreach(var validationErrorItem in validationErrors)
+        {
+            <li>
+               <b>@validationErrorItem.Property</b> <span>@validationErrorItem.Message</span>
+            </li>
+        }
+    </ul>
+}
+
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Title"></label>
+        <input asp-for="Title" />
+    </div>
+    <div>
+        <label asp-for="Author"></label>
+        <input asp-for="Author" />
+    </div>
+    <div>
+        <label asp-for="PublishedDate"></label>
+        <input asp-for="PublishedDate" type="date" />
+    </div>
+    <div>
+        <label asp-for="Pages"></label>
+        <input asp-for="Pages" />
+    </div>
+    <div>
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+</form>

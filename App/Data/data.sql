@@ -1,0 +1,7 @@
+SELECT TOP (1000) [Id]
+      ,[Title]
+      ,[Author]
+      ,[PublishedDate]
+      ,[Pages]
+      ,[Description]
+  FROM [BookReviewDb].[dbo].[Books]
